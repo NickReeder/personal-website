@@ -1,0 +1,16 @@
+<div class="timeline">
+    @for (item of workService.workHistory; track $index) {
+    <div class="timeline-item" (click)="onTimelineItemSelect(item.id)">
+        <app-timeline-item 
+            [logo]="item.img"
+            [class]="item.type"
+            [title]="item.title"
+            [company]="item.company"
+            [startDate]="item.startDate"
+            [endDate]="item.endDate"        
+            [id]="item.id"
+           >
+        </app-timeline-item>
+    </div>
+    }
+</div>

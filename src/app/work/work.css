@@ -1,0 +1,25 @@
+/* 1) Scrollable Container */
+.timeline-container {
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+  width: 100% - 350px;
+  float: left;
+  overflow-y: visible;
+  max-height: none;
+}
+
+
+
+
+.focus {
+    position: fixed;
+    top: 50%;
+    right: 20px; /* ✅ Adds 20px space from the right edge */
+    width: 300px;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle depth */
+    border-radius: 8px; /* Optional: softens corners */
+}

@@ -1,0 +1,9 @@
+<button class="project" [routerLink]="['/projects', link()]">
+    <article>
+        <h2>{{title()}}</h2>
+        <ng-content>
+
+        </ng-content>
+        <p> {{description()}}</p>
+    </article>
+</button>
