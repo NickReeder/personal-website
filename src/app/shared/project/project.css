@@ -1,5 +1,6 @@
 .project{
     border: none;
+    width: 100%;
 }
 
 .project:hover {

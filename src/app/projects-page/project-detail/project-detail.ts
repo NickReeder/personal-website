@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../shared/project-service';
 import { project } from '../../shared/project-service';
+import { GalleriaNavigatorIndicators } from "./carousel/carousel";
+import { GalleriaModule } from "primeng/galleria";
+
 
 @Component({
   selector: 'app-project-detail',
-  imports: [],
+  imports: [GalleriaModule, GalleriaNavigatorIndicators],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css'
 })
@@ -20,9 +23,5 @@ export class ProjectDetail {
     this.project = this.projectService.projectData.find(p => p.link === projectId);
   }
 
-
-  
-
-  
 
 }

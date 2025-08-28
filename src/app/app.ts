@@ -1,18 +1,18 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from "./shared/header/header";
-import { Home } from "./home/home";
-import { About } from "./about/about";
+// import { Home } from "./home/home";
+// import { About } from "./about/about";
 import { CommonModule } from '@angular/common';
-import { NavigationButton } from "./shared/navigation-button/navigation-button";
-import { Work } from "./work/work";
+// import { NavigationButton } from "./shared/navigation-button/navigation-button";
+// import { Work } from "./work/work";
 // import { ProjectPage } from "./project-page/project-page";
 
 export type Mode = 'home' | 'about' | 'contact';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Home, CommonModule, NavigationButton, About, Work, RouterOutlet],
+  imports: [Header, CommonModule, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

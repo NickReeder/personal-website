@@ -1,2 +1,16 @@
-<h1> {{project?.title}}</h1>
-<p> {{project?.tagline}}<p>
+
+<div class="wrapper">
+    <div class="split-left">
+        <!-- <p> {{project?.image?.[0]?.title}}</p> -->
+        <app-carousel [images]="project?.image"></app-carousel>
+    </div>
+
+    <div class='split-right'>
+        <h1 class ='project-title'> {{project?.title}}</h1>
+        <p class='project-tagline'>{{project?.tagline}}</p>
+        <article [innerHTML] = project?.description></article>
+    </div>
+</div>
+
+
+
