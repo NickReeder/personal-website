@@ -40,7 +40,7 @@ main {
     color: #333;
   }
 
-.img-credit{
+.img-credit ,a{
     font-size: 12px;
     color: #666;
     /* margin-top: 2px; */
@@ -56,10 +56,10 @@ main {
   text-align: center;    /* right-align image in its box */
 }
 .headshot{
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 

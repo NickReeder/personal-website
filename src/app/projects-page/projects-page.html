@@ -3,7 +3,7 @@
     @for (p of projects; track $index) {
         <!-- <app-project [project]="p"></app-project> -->
         <app-project [title]="p.title" [description]="p.tagline" [link]="p.link">
-        <img class = "proj-img" src="assets/standin_image.png" alt="Project One Image">
+        <img class = "proj-img" [src]="p.image[0].itemImageSrc" [alt]="p.image[0]">
         </app-project>
     }
 </div>

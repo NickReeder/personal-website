@@ -4,6 +4,7 @@ import { FocusItem } from "./focus-item/focus-item";
 
 
 
+
 @Component({
   selector: 'app-work',
   imports: [Timeline, FocusItem],
@@ -20,6 +21,7 @@ export class Work {
   changeWork(value: string) {
     console.log(`work selection changed to: ${value}`);
     this.selectedItem = value;
+
   }
 
 }

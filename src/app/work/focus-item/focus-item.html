@@ -3,6 +3,20 @@
         <h1>{{j.title}} - {{j.company}}</h1>
         <p> {{j.startDate}}-{{j.endDate}} </p>
         <p [innerHTML] = j.description> </p>
+        @if (num_badges > 0) {
+            <div class = 'badges'>
+                <p> <b> Badges Earned: </b> </p>
+                @for (badge of j.badges; track $index) {
+                    <img class = 'badge' 
+                        src = {{badge.img}}
+                        pTooltip={{badge.description}}
+                        tooltipEvent="hover"
+                        tooltipPosition="top"
+                        >
+                }
+            
+            </div>
+            }
     </div>
     <div class = 'right'>
         <p> <b> Key Skills: </b> </p>
@@ -10,10 +24,10 @@
             @for (skill of j.skills; track $index) {
                 <li> {{skill}} </li>
             }
-            <!-- <li> {{j.skills}}</li> -->
-        </ul> 
 
+        </ul> 
     </div>
+
     
 
 </div>
