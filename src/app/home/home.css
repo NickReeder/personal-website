@@ -8,6 +8,8 @@ main {
     padding: 80px 20px;
     background-color: #f4f4f4;
     border: none;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   /* Headings and paragraph text */
@@ -77,3 +79,4 @@ main {
 .site-nav li{
     margin: 0 1rem;
   }
+

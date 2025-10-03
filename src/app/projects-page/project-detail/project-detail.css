@@ -6,6 +6,8 @@
     margin: 20px;
 }
 
+
+
 /* Left side: Image container */
 
 
@@ -14,6 +16,43 @@
   max-height: 100%;
   object-fit: cover;
 }
+
+.back-button {
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  /* background: linear-gradient(135deg, #1f6aa5, #0b1020); */
+  /* color: #ffffff; */
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.back-button::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--nav-button-color-hover, black); /*sets the color to the variable, if none are declared use the aquamarine */
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+
+}
+
+
+.back-button:hover{
+  transform: translateY(-4px); /* Move up slightly */
+  
+}
+
+.back-button:hover::after{
+  width: 75%;
+}
+
+
 
 /* Right side: Project description */
 .split-right {

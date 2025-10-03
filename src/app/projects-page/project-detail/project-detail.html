@@ -1,6 +1,12 @@
 
 <div class="wrapper">
+
     <div class="split-left">
+        <a class="back-button" 
+            href = '/projects'
+            routerLink="/projects"
+            > ← Back
+         </a>
         <!-- <p> {{project?.image?.[0]?.title}}</p> -->
         <app-carousel [images]="project?.image"></app-carousel>
     </div>

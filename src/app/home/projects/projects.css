@@ -4,6 +4,8 @@
     gap: 1rem;        /* Adds spacing between items */
     justify-content: space-between; /* Optional: distributes items evenly */
     padding: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 app-project {

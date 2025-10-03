@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProjectService } from '../../shared/project-service';
 import { project } from '../../shared/project-service';
 import { GalleriaNavigatorIndicators } from "./carousel/carousel";
 import { GalleriaModule } from "primeng/galleria";
 
-
 @Component({
   selector: 'app-project-detail',
-  imports: [GalleriaModule, GalleriaNavigatorIndicators],
+  imports: [GalleriaModule, GalleriaNavigatorIndicators, RouterLink],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css'
 })

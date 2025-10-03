@@ -16,7 +16,7 @@ main {
     max-width: 700px;
     margin: 0 auto 40px;
   }
-  
+ 
 /* Introduction */
 .introduction {
     display: flex;
@@ -39,6 +39,13 @@ main {
     /* line-height: 1.6; */
     color: #333;
   }
+   ul {
+    font-size: 24px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #333;
+  }
+  
 
 .img-credit ,a{
     font-size: 12px;

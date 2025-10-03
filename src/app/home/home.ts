@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Projects } from './projects/projects';
 import { NavigationButton } from "../shared/navigation-button/navigation-button";
+// import { ReadingList } from "./reading-list/reading-list";
 
 
 @Component({

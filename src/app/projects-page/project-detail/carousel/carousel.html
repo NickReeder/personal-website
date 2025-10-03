@@ -5,14 +5,13 @@
         [showThumbnails]="false" 
         [showIndicators]="true" 
         [showItemNavigatorsOnHover]="true" 
-        [autoPlay]="true"
+        [autoPlay]="false"
         [circular]="true" 
         [responsiveOptions]="responsiveOptions" 
-        [containerStyle]="{ 'max-width': '640px' }"
+        [containerStyle]="{ 'width': '640px', 'height': '640px' }"
         >
-        
         <ng-template #item let-item>
-            <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+            <img [src]="item.itemImageSrc" style="width: 100%; height: 640px; object-fit: cover; display: block;" />
         </ng-template>
         <ng-template #caption let-item>
             <div class="text-xl mb-2 font-bold">{{ item.title }}</div>

@@ -1,9 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { NavigationButton } from "../shared/navigation-button/navigation-button";
+import { ReadingList } from './reading-list/reading-list';
+
 
 @Component({
   selector: 'app-about',
-  imports: [NavigationButton],
+  imports: [NavigationButton, ReadingList],
   templateUrl: './about.html',
   styleUrl: './about.css'
 })
