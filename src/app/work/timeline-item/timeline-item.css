@@ -1,47 +1,112 @@
 .timeline-item-wrapper {
-  display: flex;           /* or however you lay out your dot + content */
+  display: flex;
   cursor: pointer;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* 3) Individual Items */
 .timeline-item {
   position: relative;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 
 .timeline-dot {
   position: absolute;
-  left: 12px;             /* centers dot over the line */
-  width: 16px;
-  height: 16px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
   background: #007BFF;
   border-radius: 50%;
   margin-top: 6px;
 }
 
 .timeline-content {
-  margin-left: 2.5rem;    /* space between dot and text */
+  margin-left: 2rem;
   background: #fff;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: calc(100% - 2rem);
 }
 
 .timeline-content h3 {
   margin: 0 0 0.25rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .timeline-content .date {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: #666;
 }
 
 .timeline-content p {
   margin: 0.5rem 0 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .timeline-item {
+    padding: 1rem 2rem;
+  }
+
+  .timeline-dot {
+    left: 12px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-content {
+    margin-left: 2.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-content .date {
+    font-size: 0.875rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding: 0.5rem 1rem;
+  }
+
+  .timeline-dot {
+    left: 6px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline-content {
+    margin-left: 1.5rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .timeline-content .date {
+    font-size: 0.75rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.85rem;
+  }
 }
 
 
