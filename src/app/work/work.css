@@ -19,7 +19,7 @@
     transform: translateY(-50%);
     /* responsive padding */
     padding: clamp(10px, 1.5vw, 20px);
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
