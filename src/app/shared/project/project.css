@@ -1,0 +1,10 @@
+.project{
+    border: none;
+    width: 100%;
+}
+
+.project:hover {
+    cursor: pointer;
+    border: 1px solid #cccccc ; /* Optional: adds a border on hover  -- make this a different color*/ 
+    
+}

@@ -1,0 +1,36 @@
+<main class="reading-list">
+  <h1>What I'm reading and watching</h1>
+  <p>Both what I am currently reading/watching and some of my favorites</p>
+
+<div class="reading-columns">
+  <!-- Fiction Section -->
+    <section class="media-section">
+        <h2>Fiction</h2>
+        <div class="media-grid">
+            @for (m of fictionList; track $index) {
+                <app-media
+                    [title]="m.title"
+                    [author]="m.author"
+                    [image]="m.image"
+                    [review]="m.review">      
+                </app-media>
+                }
+        </div>
+    </section>
+
+  <!-- Non-Fiction Section -->
+    <section class="media-section">
+        <h2>Non-Fiction</h2>
+        <div class="media-grid">
+            @for (m of nonFictionList; track $index) {
+                <app-media
+                [title]="m.title"
+                [author]="m.author"
+                [image]="m.image"
+                [review]="m.review">      
+                </app-media>
+                }
+        </div>
+    </section>
+  </div>
+</main>

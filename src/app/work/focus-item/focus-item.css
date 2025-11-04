@@ -1,0 +1,35 @@
+
+.focus {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 50%;
+    right: 100px; /* ✅ Adds 20px space from the right edge */
+    width: 1200px;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle depth */
+    border-radius: 8px; /* Optional: softens corners */
+}
+
+.right{
+    width: 800px;
+    border-left: 1px solid black;
+    padding: 4px
+}
+
+.badges{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 10px;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.badge{
+    height: 200px;
+    width: auto;
+}

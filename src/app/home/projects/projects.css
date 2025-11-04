@@ -1,0 +1,22 @@
+.Projects {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there's not enough horizontal space */
+    gap: 1rem;        /* Adds spacing between items */
+    justify-content: space-between; /* Optional: distributes items evenly */
+    padding: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+app-project {
+    flex: 1 1 30%; /* Allows flexibility while maintaining ~30% width */
+}
+
+
+  .proj-img{
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+    margin-bottom: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
