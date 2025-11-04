@@ -6,7 +6,7 @@
 main {
     text-align: center;
     padding: 80px 20px;
-    background-color: #f4f4f4;
+      background-color: #ff69b4; /* TEMP: pink background to verify deployment */
     border: none;
     padding-left: 0;
     padding-right: 0;
