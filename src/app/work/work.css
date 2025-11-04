@@ -15,11 +15,38 @@
 .focus {
     position: fixed;
     top: 50%;
-    right: 20px; /* ✅ Adds 20px space from the right edge */
-    width: 300px;
+    right: 20px; /* keeps a gap from the right edge */
+    /* responsive width: min 220px, ideal 18vw, max 340px */
+    width: clamp(220px, 18vw, 340px);
     transform: translateY(-50%);
-    padding: 20px;
+    /* responsive padding */
+    padding: clamp(10px, 1.5vw, 20px);
     background-color: #f8f9fa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle depth */
-    border-radius: 8px; /* Optional: softens corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Focus sizing overrides for common breakpoints */
+@media (max-width: 1024px) {
+  .focus {
+    width: clamp(200px, 20vw, 300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .focus {
+    width: clamp(180px, 28vw, 260px);
+    right: 12px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .focus {
+    /* stay on the right but use most of the width on small screens */
+    width: 90%;
+    right: 5%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
 }
